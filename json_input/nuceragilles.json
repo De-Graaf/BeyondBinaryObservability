@@ -1,0 +1,66 @@
+{
+  "version": "1.0",
+  "type": "input",
+  "is_batch": false,
+  "attributes": {},
+  "data": {
+    "source": [
+      {"id": 0, "node": 1, "status": 1, "u_ref": 1.0}
+    ],
+    "node": [
+      {"id": 1, "u_rated": 10000},
+      {"id": 2, "u_rated": 10000},
+      {"id": 3, "u_rated": 10000},
+      {"id": 4, "u_rated": 10000},
+      {"id": 5, "u_rated": 10000},
+      {"id": 6, "u_rated": 10000},
+      {"id": 7, "u_rated": 10000},
+      {"id": 8, "u_rated": 10000},
+      {"id": 9, "u_rated": 10000},
+      {"id":10, "u_rated": 10000},
+      {"id":50, "u_rated": 10000},
+      {"id":51, "u_rated": 10000},
+      {"id":52, "u_rated": 10000}
+    ],
+    "line": [
+      {"id": 11, "from_node": 1, "to_node": 10, "from_status": 1, "to_status": 1, "r1": 0.1, "x1": 0.0, "c1": 0.0, "tan1": 0.0, "i_n": 500},
+      {"id": 12, "from_node": 1, "to_node": 2, "from_status": 1, "to_status": 1, "r1": 0.1, "x1": 0.0, "c1": 0.0, "tan1": 0.0, "i_n": 500},
+      {"id": 13, "from_node": 2, "to_node": 9, "from_status": 1, "to_status": 1, "r1": 0.1, "x1": 0.0, "c1": 0.0, "tan1": 0.0, "i_n": 500},
+      {"id":14, "from_node": 2, "to_node": 3, "from_status": 1, "to_status": 1, "r1": 0.1, "x1": 0.0, "c1": 0.0, "tan1": 0.0, "i_n": 500},
+      {"id":15, "from_node": 10, "to_node": 9, "from_status": 1, "to_status": 1, "r1": 0.1, "x1": 0.0, "c1": 0.0, "tan1": 0.0, "i_n": 500},
+      {"id":16, "from_node": 9, "to_node": 3, "from_status": 1, "to_status": 1, "r1": 0.1, "x1": 0.0, "c1": 0.0, "tan1": 0.0, "i_n": 500},
+      {"id":17, "from_node": 3, "to_node": 4, "from_status": 1, "to_status": 1, "r1": 0.1, "x1": 0.0, "c1": 0.0, "tan1": 0.0, "i_n": 500},
+      {"id":18, "from_node": 9, "to_node": 8, "from_status": 1, "to_status": 1, "r1": 0.1, "x1": 0.0, "c1": 0.0, "tan1": 0.0, "i_n": 500},
+      {"id":19, "from_node": 8, "to_node": 4, "from_status": 1, "to_status": 1, "r1": 0.1, "x1": 0.0, "c1": 0.0, "tan1": 0.0, "i_n": 500},
+      {"id":20, "from_node": 4, "to_node": 5, "from_status": 1, "to_status": 1, "r1": 0.1, "x1": 0.0, "c1": 0.0, "tan1": 0.0, "i_n": 500},
+      {"id":21, "from_node": 4, "to_node": 6, "from_status": 1, "to_status": 1, "r1": 0.1, "x1": 0.0, "c1": 0.0, "tan1": 0.0, "i_n": 500},
+      {"id":22, "from_node": 5, "to_node": 6, "from_status": 1, "to_status": 1, "r1": 0.1, "x1": 0.0, "c1": 0.0, "tan1": 0.0, "i_n": 500},
+      {"id":23, "from_node": 6, "to_node": 7, "from_status": 1, "to_status": 1, "r1": 0.1, "x1": 0.0, "c1": 0.0, "tan1": 0.0, "i_n": 500},
+      {"id":53, "from_node": 8, "to_node": 50, "from_status": 1, "to_status": 1, "r1": 0.1, "x1": 0.0, "c1": 0.0, "tan1": 0.0, "i_n": 500},
+      {"id":54, "from_node": 9, "to_node": 51, "from_status": 1, "to_status": 1, "r1": 0.1, "x1": 0.0, "c1": 0.0, "tan1": 0.0, "i_n": 500},
+      {"id":55, "from_node": 51, "to_node": 52, "from_status": 1, "to_status": 1, "r1": 0.1, "x1": 0.0, "c1": 0.0, "tan1": 0.0, "i_n": 500}
+    ],
+    "sym_power_sensor": [
+      {"id": 24, "measured_object": 1, "measured_terminal_type": 9, "p_sigma": 1e6, "q_sigma": 1e6, "p_measured": 0, "q_measured": 0},
+      {"id": 25, "measured_object": 2, "measured_terminal_type": 9, "p_sigma": 1e6, "q_sigma": 1e6, "p_measured": 0, "q_measured": 0},
+      {"id": 26, "measured_object": 4, "measured_terminal_type": 9, "p_sigma": 1e6, "q_sigma": 1e6, "p_measured": 0, "q_measured": 0},
+      {"id": 27, "measured_object": 6, "measured_terminal_type": 9, "p_sigma": 1e6, "q_sigma": 1e6, "p_measured": 0, "q_measured": 0},
+      {"id": 28, "measured_object": 10, "measured_terminal_type": 9, "p_sigma": 1e6, "q_sigma": 1e6, "p_measured": 0, "q_measured": 0},
+      {"id": 29, "measured_object": 15, "measured_terminal_type": 1, "p_sigma": 1e6, "q_sigma": 1e6, "p_measured": 0, "q_measured": 0},
+      {"id": 30, "measured_object": 17, "measured_terminal_type": 1, "p_sigma": 1e6, "q_sigma": 1e6, "p_measured": 0, "q_measured": 0},
+      {"id": 31, "measured_object": 18, "measured_terminal_type": 1, "p_sigma": 1e6, "q_sigma": 1e6, "p_measured": 0, "q_measured": 0},
+      {"id": 56, "measured_object": 53, "measured_terminal_type": 1, "p_sigma": 1e6, "q_sigma": 1e6, "p_measured": 0, "q_measured": 0},
+      {"id": 57, "measured_object": 55, "measured_terminal_type": 1, "p_sigma": 1e6, "q_sigma": 1e6, "p_measured": 0, "q_measured": 0},
+      {"id": 58, "measured_object": 51, "measured_terminal_type": 9, "p_sigma": 1e6, "q_sigma": 1e6, "p_measured": 0, "q_measured": 0}
+      
+    ],
+    "sym_current_sensor": [
+      ],
+    "sym_voltage_sensor": [
+      {"id": 17, "measured_object": 3, "u_sigma": 1e3, "u_measured": 10000, "u_angle_measured": 0}
+    ],
+    "sym_load": [
+  
+    ]
+  }
+}

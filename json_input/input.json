@@ -1,0 +1,42 @@
+{
+  "version": "1.0",
+  "type": "input",
+  "is_batch": false,
+  "attributes": {},
+  "data": {
+    "node": [
+      {"id": 1, "u_rated": 10500},
+      {"id": 2, "u_rated": 10500},
+      {"id": 6, "u_rated": 10500}
+    ],
+    "line": [
+      {"id": 3, "from_node": 1, "to_node": 2, "from_status": 1, "to_status": 1, "r1": 0.25, "x1": 0.20000000000000001, "c1": 1.0000000000000001e-05, "tan1": 0, "i_n": 1000},
+      {"id": 5, "from_node": 2, "to_node": 6, "from_status": 1, "to_status": 1, "r1": 0.25, "x1": 0.20000000000000001, "c1": 1.0000000000000001e-05, "tan1": 0, "i_n": 1000},
+      {"id": 8, "from_node": 1, "to_node": 6, "from_status": 1, "to_status": 1, "r1": 0.25, "x1": 0.20000000000000001, "c1": 1.0000000000000001e-05, "tan1": 0, "i_n": 1000}
+    ],
+    "sym_load": [
+      {"id": 4, "node": 2, "status": 1, "type": 0, "p_specified": 20000000, "q_specified": 5000000},
+      {"id": 7, "node": 6, "status": 1, "type": 0, "p_specified": 10000000, "q_specified": 2000000}
+    ],
+    "source": [
+      {"id": 10, "node": 1, "status": 1, "u_ref": 1}
+    ],
+    "sym_voltage_sensor": [
+      {"id": 11, "measured_object": 1, "u_sigma": 1, "u_measured": 10489.370000000001, "u_angle_measured": 0},
+      {"id": 12, "measured_object": 2, "u_sigma": 1, "u_measured": 9997.3199999999997, "u_angle_measured": 0},
+      {"id": 13, "measured_object": 6, "u_sigma": 1, "u_measured": 10102.01, "u_angle_measured": 0}
+    ],
+    "sym_power_sensor": [
+      {"id": 14, "measured_object": 3, "measured_terminal_type": 1, "power_sigma": 1000, "p_measured": -16600000, "q_measured": -3820000},
+      {"id": 15, "measured_object": 5, "measured_terminal_type": 0, "power_sigma": 1000, "p_measured": -3360000, "q_measured": -1170000},
+      {"id": 16, "measured_object": 8, "measured_terminal_type": 1, "power_sigma": 1000, "p_measured": -13300000, "q_measured": -2880000},
+      {"id": 17, "measured_object": 4, "measured_terminal_type": 4, "power_sigma": 1000, "p_measured": 20000000, "q_measured": 5000000},
+      {"id": 18, "measured_object": 6, "measured_terminal_type": 9, "power_sigma": 1000, "p_measured": -10000000, "q_measured": -2000000}
+    ],
+    "sym_current_sensor": [
+      {"id": 19, "measured_object": 3, "measured_terminal_type": 0, "angle_measurement_type": 1, "i_sigma": 100, "i_angle_sigma": 0.10000000000000001, "i_measured": 978.81399999999996, "i_angle_measured": -0.20864859135578062},
+      {"id": 20, "measured_object": 5, "measured_terminal_type": 1, "angle_measurement_type": 0, "i_sigma": 100, "i_angle_sigma": 0.10000000000000001, "i_measured": 806.48599999999999, "i_angle_measured": 1.3680000000000001},
+      {"id": 21, "measured_object": 8, "measured_terminal_type": 0, "angle_measurement_type": 0, "i_sigma": 100, "i_angle_sigma": 0.10000000000000001, "i_measured": 776.75300000000004, "i_angle_measured": 1.349}
+    ]
+  }
+}

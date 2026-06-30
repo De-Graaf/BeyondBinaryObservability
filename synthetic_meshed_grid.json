@@ -1,0 +1,869 @@
+{
+  "version": "1.0",
+  "type": "input",
+  "is_batch": false,
+  "attributes": {},
+  "data": {
+    "source": [
+      {
+        "id": 0,
+        "node": 1,
+        "status": 1,
+        "u_ref": 1.0
+      }
+    ],
+    "node": [
+      {
+        "id": 1,
+        "u_rated": 10000
+      },
+      {
+        "id": 2,
+        "u_rated": 10000
+      },
+      {
+        "id": 3,
+        "u_rated": 10000
+      },
+      {
+        "id": 4,
+        "u_rated": 10000
+      },
+      {
+        "id": 5,
+        "u_rated": 10000
+      },
+      {
+        "id": 6,
+        "u_rated": 10000
+      },
+      {
+        "id": 7,
+        "u_rated": 10000
+      },
+      {
+        "id": 8,
+        "u_rated": 10000
+      },
+      {
+        "id": 9,
+        "u_rated": 10000
+      },
+      {
+        "id": 10,
+        "u_rated": 10000
+      },
+      {
+        "id": 11,
+        "u_rated": 10000
+      },
+      {
+        "id": 12,
+        "u_rated": 10000
+      },
+      {
+        "id": 13,
+        "u_rated": 10000
+      },
+      {
+        "id": 14,
+        "u_rated": 10000
+      },
+      {
+        "id": 15,
+        "u_rated": 10000
+      },
+      {
+        "id": 16,
+        "u_rated": 10000
+      },
+      {
+        "id": 17,
+        "u_rated": 10000
+      },
+      {
+        "id": 18,
+        "u_rated": 10000
+      },
+      {
+        "id": 19,
+        "u_rated": 10000
+      },
+      {
+        "id": 20,
+        "u_rated": 10000
+      },
+      {
+        "id": 21,
+        "u_rated": 10000
+      },
+      {
+        "id": 22,
+        "u_rated": 10000
+      },
+      {
+        "id": 23,
+        "u_rated": 10000
+      },
+      {
+        "id": 24,
+        "u_rated": 10000
+      },
+      {
+        "id": 25,
+        "u_rated": 10000
+      },
+      {
+        "id": 26,
+        "u_rated": 10000
+      },
+      {
+        "id": 27,
+        "u_rated": 10000
+      },
+      {
+        "id": 28,
+        "u_rated": 10000
+      },
+      {
+        "id": 29,
+        "u_rated": 10000
+      },
+      {
+        "id": 30,
+        "u_rated": 10000
+      }
+    ],
+    "line": [
+      {
+        "id": 31,
+        "from_node": 1,
+        "to_node": 11,
+        "from_status": 1,
+        "to_status": 1,
+        "r1": 0.11672518267643911,
+        "x1": 0.11672518267643911,
+        "c1": 0.0,
+        "tan1": 0.0,
+        "i_n": 500
+      },
+      {
+        "id": 32,
+        "from_node": 1,
+        "to_node": 4,
+        "from_status": 1,
+        "to_status": 1,
+        "r1": 0.11261187789982796,
+        "x1": 0.11261187789982796,
+        "c1": 0.0,
+        "tan1": 0.0,
+        "i_n": 500
+      },
+      {
+        "id": 33,
+        "from_node": 1,
+        "to_node": 14,
+        "from_status": 1,
+        "to_status": 1,
+        "r1": 0.08723683348725342,
+        "x1": 0.08723683348725342,
+        "c1": 0.0,
+        "tan1": 0.0,
+        "i_n": 500
+      },
+      {
+        "id": 34,
+        "from_node": 2,
+        "to_node": 3,
+        "from_status": 1,
+        "to_status": 1,
+        "r1": 0.08383877092526382,
+        "x1": 0.08383877092526382,
+        "c1": 0.0,
+        "tan1": 0.0,
+        "i_n": 500
+      },
+      {
+        "id": 35,
+        "from_node": 2,
+        "to_node": 9,
+        "from_status": 1,
+        "to_status": 1,
+        "r1": 0.08361241405645335,
+        "x1": 0.08361241405645335,
+        "c1": 0.0,
+        "tan1": 0.0,
+        "i_n": 500
+      },
+      {
+        "id": 36,
+        "from_node": 2,
+        "to_node": 20,
+        "from_status": 1,
+        "to_status": 1,
+        "r1": 0.08722432894031541,
+        "x1": 0.08722432894031541,
+        "c1": 0.0,
+        "tan1": 0.0,
+        "i_n": 500
+      },
+      {
+        "id": 37,
+        "from_node": 4,
+        "to_node": 17,
+        "from_status": 1,
+        "to_status": 1,
+        "r1": 0.10444053516976218,
+        "x1": 0.10444053516976218,
+        "c1": 0.0,
+        "tan1": 0.0,
+        "i_n": 500
+      },
+      {
+        "id": 38,
+        "from_node": 4,
+        "to_node": 28,
+        "from_status": 1,
+        "to_status": 1,
+        "r1": 0.08195831465752101,
+        "x1": 0.08195831465752101,
+        "c1": 0.0,
+        "tan1": 0.0,
+        "i_n": 500
+      },
+      {
+        "id": 39,
+        "from_node": 5,
+        "to_node": 24,
+        "from_status": 1,
+        "to_status": 1,
+        "r1": 0.10300194114710454,
+        "x1": 0.10300194114710454,
+        "c1": 0.0,
+        "tan1": 0.0,
+        "i_n": 500
+      },
+      {
+        "id": 40,
+        "from_node": 6,
+        "to_node": 16,
+        "from_status": 1,
+        "to_status": 1,
+        "r1": 0.115822975037157,
+        "x1": 0.115822975037157,
+        "c1": 0.0,
+        "tan1": 0.0,
+        "i_n": 500
+      },
+      {
+        "id": 41,
+        "from_node": 6,
+        "to_node": 24,
+        "from_status": 1,
+        "to_status": 1,
+        "r1": 0.11703255239124846,
+        "x1": 0.11703255239124846,
+        "c1": 0.0,
+        "tan1": 0.0,
+        "i_n": 500
+      },
+      {
+        "id": 42,
+        "from_node": 6,
+        "to_node": 9,
+        "from_status": 1,
+        "to_status": 1,
+        "r1": 0.0934265029307213,
+        "x1": 0.0934265029307213,
+        "c1": 0.0,
+        "tan1": 0.0,
+        "i_n": 500
+      },
+      {
+        "id": 43,
+        "from_node": 7,
+        "to_node": 10,
+        "from_status": 1,
+        "to_status": 1,
+        "r1": 0.11271394472316994,
+        "x1": 0.11271394472316994,
+        "c1": 0.0,
+        "tan1": 0.0,
+        "i_n": 500
+      },
+      {
+        "id": 44,
+        "from_node": 8,
+        "to_node": 10,
+        "from_status": 1,
+        "to_status": 1,
+        "r1": 0.08262982495165114,
+        "x1": 0.08262982495165114,
+        "c1": 0.0,
+        "tan1": 0.0,
+        "i_n": 500
+      },
+      {
+        "id": 45,
+        "from_node": 8,
+        "to_node": 30,
+        "from_status": 1,
+        "to_status": 1,
+        "r1": 0.09858887197973606,
+        "x1": 0.09858887197973606,
+        "c1": 0.0,
+        "tan1": 0.0,
+        "i_n": 500
+      },
+      {
+        "id": 46,
+        "from_node": 9,
+        "to_node": 21,
+        "from_status": 1,
+        "to_status": 1,
+        "r1": 0.08679386262093386,
+        "x1": 0.08679386262093386,
+        "c1": 0.0,
+        "tan1": 0.0,
+        "i_n": 500
+      },
+      {
+        "id": 47,
+        "from_node": 10,
+        "to_node": 24,
+        "from_status": 1,
+        "to_status": 1,
+        "r1": 0.11500778651612208,
+        "x1": 0.11500778651612208,
+        "c1": 0.0,
+        "tan1": 0.0,
+        "i_n": 500
+      },
+      {
+        "id": 48,
+        "from_node": 12,
+        "to_node": 15,
+        "from_status": 1,
+        "to_status": 1,
+        "r1": 0.10798103093772858,
+        "x1": 0.10798103093772858,
+        "c1": 0.0,
+        "tan1": 0.0,
+        "i_n": 500
+      },
+      {
+        "id": 49,
+        "from_node": 12,
+        "to_node": 26,
+        "from_status": 1,
+        "to_status": 1,
+        "r1": 0.11458291535804932,
+        "x1": 0.11458291535804932,
+        "c1": 0.0,
+        "tan1": 0.0,
+        "i_n": 500
+      },
+      {
+        "id": 50,
+        "from_node": 13,
+        "to_node": 19,
+        "from_status": 1,
+        "to_status": 1,
+        "r1": 0.09094148922544794,
+        "x1": 0.09094148922544794,
+        "c1": 0.0,
+        "tan1": 0.0,
+        "i_n": 500
+      },
+      {
+        "id": 51,
+        "from_node": 13,
+        "to_node": 23,
+        "from_status": 1,
+        "to_status": 1,
+        "r1": 0.09449089677147501,
+        "x1": 0.09449089677147501,
+        "c1": 0.0,
+        "tan1": 0.0,
+        "i_n": 500
+      },
+      {
+        "id": 52,
+        "from_node": 14,
+        "to_node": 27,
+        "from_status": 1,
+        "to_status": 1,
+        "r1": 0.08191562693724727,
+        "x1": 0.08191562693724727,
+        "c1": 0.0,
+        "tan1": 0.0,
+        "i_n": 500
+      },
+      {
+        "id": 53,
+        "from_node": 14,
+        "to_node": 17,
+        "from_status": 1,
+        "to_status": 1,
+        "r1": 0.11007003395429896,
+        "x1": 0.11007003395429896,
+        "c1": 0.0,
+        "tan1": 0.0,
+        "i_n": 500
+      },
+      {
+        "id": 54,
+        "from_node": 17,
+        "to_node": 24,
+        "from_status": 1,
+        "to_status": 1,
+        "r1": 0.08113595467477121,
+        "x1": 0.08113595467477121,
+        "c1": 0.0,
+        "tan1": 0.0,
+        "i_n": 500
+      },
+      {
+        "id": 55,
+        "from_node": 18,
+        "to_node": 22,
+        "from_status": 1,
+        "to_status": 1,
+        "r1": 0.11189911492970635,
+        "x1": 0.11189911492970635,
+        "c1": 0.0,
+        "tan1": 0.0,
+        "i_n": 500
+      },
+      {
+        "id": 56,
+        "from_node": 19,
+        "to_node": 22,
+        "from_status": 1,
+        "to_status": 1,
+        "r1": 0.10442538804539572,
+        "x1": 0.10442538804539572,
+        "c1": 0.0,
+        "tan1": 0.0,
+        "i_n": 500
+      },
+      {
+        "id": 57,
+        "from_node": 20,
+        "to_node": 30,
+        "from_status": 1,
+        "to_status": 1,
+        "r1": 0.08775820088676854,
+        "x1": 0.08775820088676854,
+        "c1": 0.0,
+        "tan1": 0.0,
+        "i_n": 500
+      },
+      {
+        "id": 58,
+        "from_node": 21,
+        "to_node": 26,
+        "from_status": 1,
+        "to_status": 1,
+        "r1": 0.10715196618263739,
+        "x1": 0.10715196618263739,
+        "c1": 0.0,
+        "tan1": 0.0,
+        "i_n": 500
+      },
+      {
+        "id": 59,
+        "from_node": 23,
+        "to_node": 29,
+        "from_status": 1,
+        "to_status": 1,
+        "r1": 0.08534842460336507,
+        "x1": 0.08534842460336507,
+        "c1": 0.0,
+        "tan1": 0.0,
+        "i_n": 500
+      },
+      {
+        "id": 60,
+        "from_node": 23,
+        "to_node": 26,
+        "from_status": 1,
+        "to_status": 1,
+        "r1": 0.09561106121119306,
+        "x1": 0.09561106121119306,
+        "c1": 0.0,
+        "tan1": 0.0,
+        "i_n": 500
+      },
+      {
+        "id": 61,
+        "from_node": 24,
+        "to_node": 27,
+        "from_status": 1,
+        "to_status": 1,
+        "r1": 0.11945929939995592,
+        "x1": 0.11945929939995592,
+        "c1": 0.0,
+        "tan1": 0.0,
+        "i_n": 500
+      },
+      {
+        "id": 62,
+        "from_node": 25,
+        "to_node": 26,
+        "from_status": 1,
+        "to_status": 1,
+        "r1": 0.10992766807235461,
+        "x1": 0.10992766807235461,
+        "c1": 0.0,
+        "tan1": 0.0,
+        "i_n": 500
+      },
+      {
+        "id": 63,
+        "from_node": 25,
+        "to_node": 30,
+        "from_status": 1,
+        "to_status": 1,
+        "r1": 0.11516405971502777,
+        "x1": 0.11516405971502777,
+        "c1": 0.0,
+        "tan1": 0.0,
+        "i_n": 500
+      }
+    ],
+    "sym_power_sensor": [
+      {
+        "id": 101,
+        "measured_object": 0,
+        "measured_terminal_type": 2,
+        "p_sigma": 1000000.0,
+        "q_sigma": 1000000.0,
+        "p_measured": 0,
+        "q_measured": 0
+      }
+    ],
+    "sym_current_sensor": [
+      {
+        "id": 102,
+        "measured_object": 33,
+        "measured_terminal_type": 0,
+        "angle_measurement_type": 0,
+        "i_sigma": 1.0,
+        "i_measured": 1.0,
+        "i_angle_sigma": 1.0,
+        "i_angle_measured": 1.0
+      },
+      {
+        "id": 103,
+        "measured_object": 34,
+        "measured_terminal_type": 0,
+        "angle_measurement_type": 0,
+        "i_sigma": 1.0,
+        "i_measured": 1.0,
+        "i_angle_sigma": 1.0,
+        "i_angle_measured": 1.0
+      },
+      {
+        "id": 104,
+        "measured_object": 37,
+        "measured_terminal_type": 0,
+        "angle_measurement_type": 0,
+        "i_sigma": 1.0,
+        "i_measured": 1.0,
+        "i_angle_sigma": 1.0,
+        "i_angle_measured": 1.0
+      },
+      {
+        "id": 105,
+        "measured_object": 44,
+        "measured_terminal_type": 0,
+        "angle_measurement_type": 0,
+        "i_sigma": 1.0,
+        "i_measured": 1.0,
+        "i_angle_sigma": 1.0,
+        "i_angle_measured": 1.0
+      },
+      {
+        "id": 106,
+        "measured_object": 47,
+        "measured_terminal_type": 0,
+        "angle_measurement_type": 0,
+        "i_sigma": 1.0,
+        "i_measured": 1.0,
+        "i_angle_sigma": 1.0,
+        "i_angle_measured": 1.0
+      },
+      {
+        "id": 107,
+        "measured_object": 49,
+        "measured_terminal_type": 0,
+        "angle_measurement_type": 0,
+        "i_sigma": 1.0,
+        "i_measured": 1.0,
+        "i_angle_sigma": 1.0,
+        "i_angle_measured": 1.0
+      },
+      {
+        "id": 108,
+        "measured_object": 56,
+        "measured_terminal_type": 0,
+        "angle_measurement_type": 0,
+        "i_sigma": 1.0,
+        "i_measured": 1.0,
+        "i_angle_sigma": 1.0,
+        "i_angle_measured": 1.0
+      },
+      {
+        "id": 109,
+        "measured_object": 59,
+        "measured_terminal_type": 0,
+        "angle_measurement_type": 0,
+        "i_sigma": 1.0,
+        "i_measured": 1.0,
+        "i_angle_sigma": 1.0,
+        "i_angle_measured": 1.0
+      }
+    ],
+    "sym_voltage_sensor": [
+      {
+        "id": 87,
+        "measured_object": 2,
+        "u_sigma": 1000.0,
+        "u_measured": 10000,
+        "u_angle_measured": 0
+      },
+      {
+        "id": 88,
+        "measured_object": 4,
+        "u_sigma": 1000.0,
+        "u_measured": 10000,
+        "u_angle_measured": 0
+      },
+      {
+        "id": 89,
+        "measured_object": 7,
+        "u_sigma": 1000.0,
+        "u_measured": 10000,
+        "u_angle_measured": 0
+      },
+      {
+        "id": 90,
+        "measured_object": 8,
+        "u_sigma": 1000.0,
+        "u_measured": 10000,
+        "u_angle_measured": 0
+      },
+      {
+        "id": 91,
+        "measured_object": 9,
+        "u_sigma": 1000.0,
+        "u_measured": 10000,
+        "u_angle_measured": 0
+      },
+      {
+        "id": 92,
+        "measured_object": 14,
+        "u_sigma": 1000.0,
+        "u_measured": 10000,
+        "u_angle_measured": 0
+      },
+      {
+        "id": 93,
+        "measured_object": 15,
+        "u_sigma": 1000.0,
+        "u_measured": 10000,
+        "u_angle_measured": 0
+      },
+      {
+        "id": 94,
+        "measured_object": 16,
+        "u_sigma": 1000.0,
+        "u_measured": 10000,
+        "u_angle_measured": 0
+      },
+      {
+        "id": 95,
+        "measured_object": 17,
+        "u_sigma": 1000.0,
+        "u_measured": 10000,
+        "u_angle_measured": 0
+      },
+      {
+        "id": 96,
+        "measured_object": 19,
+        "u_sigma": 1000.0,
+        "u_measured": 10000,
+        "u_angle_measured": 0
+      },
+      {
+        "id": 97,
+        "measured_object": 21,
+        "u_sigma": 1000.0,
+        "u_measured": 10000,
+        "u_angle_measured": 0
+      },
+      {
+        "id": 98,
+        "measured_object": 22,
+        "u_sigma": 1000.0,
+        "u_measured": 10000,
+        "u_angle_measured": 0
+      },
+      {
+        "id": 99,
+        "measured_object": 24,
+        "u_sigma": 1000.0,
+        "u_measured": 10000,
+        "u_angle_measured": 0
+      },
+      {
+        "id": 100,
+        "measured_object": 29,
+        "u_sigma": 1000.0,
+        "u_measured": 10000,
+        "u_angle_measured": 0
+      }
+    ],
+    "sym_load": [
+      {
+        "id": 64,
+        "node": 2,
+        "status": 1,
+        "type": 0
+      },
+      {
+        "id": 65,
+        "node": 5,
+        "status": 1,
+        "type": 0
+      },
+      {
+        "id": 66,
+        "node": 6,
+        "status": 1,
+        "type": 0
+      },
+      {
+        "id": 67,
+        "node": 7,
+        "status": 1,
+        "type": 0
+      },
+      {
+        "id": 68,
+        "node": 8,
+        "status": 1,
+        "type": 0
+      },
+      {
+        "id": 69,
+        "node": 9,
+        "status": 1,
+        "type": 0
+      },
+      {
+        "id": 70,
+        "node": 12,
+        "status": 1,
+        "type": 0
+      },
+      {
+        "id": 71,
+        "node": 13,
+        "status": 1,
+        "type": 0
+      },
+      {
+        "id": 72,
+        "node": 14,
+        "status": 1,
+        "type": 0
+      },
+      {
+        "id": 73,
+        "node": 15,
+        "status": 1,
+        "type": 0
+      },
+      {
+        "id": 74,
+        "node": 16,
+        "status": 1,
+        "type": 0
+      },
+      {
+        "id": 75,
+        "node": 17,
+        "status": 1,
+        "type": 0
+      },
+      {
+        "id": 76,
+        "node": 18,
+        "status": 1,
+        "type": 0
+      },
+      {
+        "id": 77,
+        "node": 19,
+        "status": 1,
+        "type": 0
+      },
+      {
+        "id": 78,
+        "node": 20,
+        "status": 1,
+        "type": 0
+      },
+      {
+        "id": 79,
+        "node": 21,
+        "status": 1,
+        "type": 0
+      },
+      {
+        "id": 80,
+        "node": 22,
+        "status": 1,
+        "type": 0
+      },
+      {
+        "id": 81,
+        "node": 24,
+        "status": 1,
+        "type": 0
+      },
+      {
+        "id": 82,
+        "node": 25,
+        "status": 1,
+        "type": 0
+      },
+      {
+        "id": 83,
+        "node": 26,
+        "status": 1,
+        "type": 0
+      },
+      {
+        "id": 84,
+        "node": 28,
+        "status": 1,
+        "type": 0
+      },
+      {
+        "id": 85,
+        "node": 29,
+        "status": 1,
+        "type": 0
+      },
+      {
+        "id": 86,
+        "node": 30,
+        "status": 1,
+        "type": 0
+      }
+    ]
+  }
+}

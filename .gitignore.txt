@@ -1,0 +1,27 @@
+# === Sensitive Data & Credentials ===
+# Never commit credentials, keys, or local configs
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+credentials.json
+
+# === VS Code Specific ===
+# Blocks user-specific settings, workspace states, and extensions
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/settings.json
+*.code-workspace
+
+# === Operating System Trash ===
+# Prevents OS-specific folder markers from cluttering the repo
+.DS_Store
+Thumbs.db
+
+# === Standard Package Managers (Uncomment what you use) ===
+# node_modules/
+# venv/
+# .venv/
+# __pycache__/

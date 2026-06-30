@@ -1,0 +1,14 @@
+============================================================
+MONTE CARLO OPTIMALITY EXPLORATION REPORT
+Timestamp: 2026-06-23 16:38:47
+------------------------------------------------------------
+Network Scale Parameters:
+  - Nodes (V)                  : 500
+  - Redundant Pool Size (|R|)   : 572
+Optimization Results Across k=50 Iterations:
+  - Deterministic Greedy Score : 1938.016462
+  - Monte Carlo Best Score    : 1981.361116
+  - Absolute Metric Delta      : 43.344654
+  - Relative Performance Gain  : 2.2365%
+============================================================
+

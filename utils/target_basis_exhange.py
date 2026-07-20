@@ -63,10 +63,6 @@ def targeted_basis_exchange_dict(
 
     u, v = get_measurement_endpoints(r_id, measurement_context['measurement_map'])
 
-    # =========================================================================
-    # RADIAL LEAF PROTECTION LOCK
-    # =========================================================================
-    # If this sensor is already deployed, make sure we aren't abandoning a dead-end leaf!
     sensor_id = int(r_id[0] if isinstance(r_id, tuple) else r_id)
 
 
@@ -92,9 +88,6 @@ def targeted_basis_exchange_dict(
 
     # 2. Extract the corresponding values (physical line IDs) into a list
     active_cycle_lines = [base_partition_dict[k] for k in active_keys]
-
-    
-
 
     if sensor_id in base_partition_dict:
         current_line = int(base_partition_dict[sensor_id])

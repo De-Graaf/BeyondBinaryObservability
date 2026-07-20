@@ -1,3 +1,16 @@
+"""
+Measurement Topology Processing Suite
+--------------------------------------
+This module handles the transformation of raw PGM (Power Grid Model) components 
+into a topology-aware measurement map. 
+
+Core logic:
+1. Translates physical assets (Loads, Sources, Lines) into unified measurement types.
+2. Resolves 'Type 9' injection measurements into their graph-based neighbor dependencies.
+3. Implements virtual Z-in mapping for unmonitored bus observability.
+4. Provides universal endpoint resolution for branch-based flows and node-based injections.
+"""
+
 from power_grid_model import (
     ComponentType,
     MeasuredTerminalType
@@ -5,7 +18,6 @@ from power_grid_model import (
 
 from utils.get_component import get_component
 
-# 2. Concise Neighbor Function
 def get_neighbors(adj, node_id):
     return list(adj.get(node_id, []))
 
@@ -21,6 +33,14 @@ def get_node_from_sensor(obj_id, term_type, source_map):
         return source_map.get(obj_id)
 
 def get_flow_measurements(input_data, line_lookup):
+    """
+    Parses power and current sensors to extract branch-based flow measurements.
+    
+    Identifies sensors connected to branch terminals (0 or 1). It cross-references 
+    the PGM line registry to map each flow sensor to its physical (from, to) nodes.
+    
+    Returns: List of (sensor_id, u, v) tuples.
+    """
     M_flow = []
 
     for sensor in get_component(input_data, ComponentType.sym_power_sensor):
@@ -46,6 +66,16 @@ def get_flow_measurements(input_data, line_lookup):
     return M_flow
 
 def get_injection_measurements(input_data, adj, load_df, source_map):
+    """
+    Parses node-specific power sensors and maps them to bus-based injections.
+    
+    Handles three categories:
+    - Node sensors: Direct bus mapping.
+    - Load sensors: Translates Load ID to parent Bus ID.
+    - Source sensors: Resolves connectivity using the source_map lookup.
+    
+    Returns: List of (sensor_id, target_node, neighbor_list) tuples.
+    """
     M_inj = []
 
     for sensor in get_component(input_data, ComponentType.sym_power_sensor):
@@ -75,6 +105,14 @@ def get_injection_measurements(input_data, adj, load_df, source_map):
     return M_inj
 
 def get_zin_measurments(input_data, adj):
+    """
+    Generates virtual 'Zero-Injection' measurements for unmonitored buses.
+    
+    To ensure observability in sparse grids, buses without physical sensors are 
+    assigned a 'Virtual Sensor ID' (90000+). This allows the DSU logic to treat 
+    unmonitored nodes as constraints, preventing islands from being marked 
+    as strictly unobservable.
+    """
     M_zin = []
     nodes_with = set()
     for sensor in input_data.get(ComponentType.source, []):
@@ -96,6 +134,13 @@ def get_zin_measurments(input_data, adj):
     return M_zin
 
 def create_measurement_map(M_flow, M_inj_zin):
+    """
+    Consolidates flow and injection/zin measurement lists into a unified 
+    dictionary lookup table.
+    
+    The resulting structure separates measurement logic by 'type', enabling
+    O(1) retrieval of graph-theoretic properties (u, v) for any sensor ID.
+    """
     measurement_map = {}
 
     # Flow measurements cover a physical branch (u, v)
@@ -111,8 +156,13 @@ def create_measurement_map(M_flow, M_inj_zin):
 
 def get_measurement_endpoints(m_id, measurement_map):
     """
-    Retrieves (u, v) nodes for both Flow and Injection measurements 
-    using the new dictionary-based metadata structure.
+    Resolves the graph-theoretic endpoints (u, v) for a given measurement ID.
+    
+    This function handles the polymorphic nature of measurements:
+    - For flow: Returns the static branch endpoints.
+    - For injection/ZIN: Returns the bus and its primary electrical neighbor. 
+      Supports tuple-based input (id, neighbor) for use in cycle-swapping 
+      or pathfinding algorithms.
     """
     # CASE A: Handle the Contextual Tuple (m_id = (actual_id, target_neighbor))
     # This is used for swaps or DSU results where an injection is 'linked' to a specific node

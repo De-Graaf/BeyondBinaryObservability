@@ -1,1 +1,3 @@
 power-grid-model
+numpy
+pandas

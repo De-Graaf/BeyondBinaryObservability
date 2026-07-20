@@ -19,9 +19,7 @@ def find_redundants_measurements(input_data, M_flow, M_inj_zin, line_map):
     base_partition_dict = {}
 
     for m, u, v in M_flow:
-        # print(f"Processing flow measurement {m} between nodes {u} and {v}")
         if not union(parent, u, v):
-
             R.add(m)
         else:
             base_partition_edges.append((u, v, m))
@@ -30,11 +28,9 @@ def find_redundants_measurements(input_data, M_flow, M_inj_zin, line_map):
 
     for m, u, neighbors in M_inj_zin:
         found_base_link = False
-        # print(f"Processing injection measurement {m} at node {u} with neighbors {neighbors}")
         for v in neighbors:
             if not found_base_link:
                 if not union(parent, u, v):
-
                     R.add((m, v))
                 else:
                     base_partition_edges.append((u, v, m))

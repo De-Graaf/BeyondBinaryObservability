@@ -1,16 +1,3 @@
-# Create a quick mapping of ALL sensor IDs to their (u, v) nodes
-# def create_measurement_map(M_flow, M_inj_zin):
-#     measurement_map = {}
-
-#     for m_id, u, v in M_flow:
-#         measurement_map[m_id] = (u, v)
-
-#     for m_id, u, neighbors in M_inj_zin:
-#         if neighbors:
-#             measurement_map[m_id] = (u, neighbors[0])
-
-#     return measurement_map
-
 from power_grid_model import (
     ComponentType,
     MeasuredTerminalType
@@ -62,7 +49,6 @@ def get_injection_measurements(input_data, adj, load_df, source_map):
     M_inj = []
 
     for sensor in get_component(input_data, ComponentType.sym_power_sensor):
-        print(f"Processing sensor: {sensor['id']}")
         obj_id = sensor["measured_object"]
         term_type = sensor["measured_terminal_type"]
         
@@ -123,22 +109,6 @@ def create_measurement_map(M_flow, M_inj_zin):
 
     return measurement_map
 
-
-# def get_measurement_endpoints(m_id, measurement_map):
-#     # Handle the Tuple (Redundant Injection or ZIN swap)
-#     if isinstance(m_id, tuple):
-#         r_id, target_node = m_id[0], m_id[1]
-        
-#         # FIX: The source node is already stored as the first element 
-#         # in your measurement_map for that ID!
-#         source_node = measurement_map.get(r_id, (None, None))[0]
-        
-#         return source_node, target_node
-    
-#     # Handle the Simple ID (Flow or Base Injection)
-#     else:
-#         return measurement_map.get(m_id, (None, None))
-    
 def get_measurement_endpoints(m_id, measurement_map):
     """
     Retrieves (u, v) nodes for both Flow and Injection measurements 

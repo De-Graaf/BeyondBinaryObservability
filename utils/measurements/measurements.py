@@ -16,7 +16,7 @@ from power_grid_model import (
     MeasuredTerminalType
 )
 
-from utils.get_component import get_component
+from utils.measurements.get_component import get_component
 
 def get_neighbors(adj, node_id):
     return list(adj.get(node_id, []))

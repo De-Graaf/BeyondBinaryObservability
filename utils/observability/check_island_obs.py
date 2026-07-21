@@ -1,5 +1,5 @@
-from utils.setunion import find
-from utils.measurements import get_measurement_endpoints
+from utils.graph.setunion import find
+from utils.measurements.measurements import get_measurement_endpoints
 from power_grid_model import (
     ComponentType,
 )

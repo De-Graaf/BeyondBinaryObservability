@@ -8,7 +8,7 @@ def thesis_performance_logger(grid_metadata, times_dict, report_metrics):
     Dedicated scaling performance logger for Master's Thesis data tables.
     Tracks structural grid parameters against isolated runtime execution tiers.
     """
-    log_file = "thesis_scaling_results.csv"
+    log_file = "results/thesis_scaling_results.csv"
     
     # Assemble the comprehensive thesis results row
     results_row = {

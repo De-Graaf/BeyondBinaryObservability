@@ -1,5 +1,5 @@
-from utils.setunion import make_parent, union
-from utils.mapping_utils import find_line
+from utils.graph.setunion import make_parent, union
+from utils.measurements.mapping import find_line
 from power_grid_model import ComponentType
 
 def find_redundants_measurements(input_data, M_flow, M_inj_zin, line_map):

@@ -1,7 +1,7 @@
-from utils.graph_lca import get_path_using_LCA, find_weakest_link
-from utils.mapping_utils import find_line
-from utils.measurements import get_measurement_endpoints
-from utils.setunion import find
+from utils.graph.lca import get_path_using_LCA, find_weakest_link
+from utils.measurements.mapping import find_line
+from utils.measurements.measurements import get_measurement_endpoints
+from utils.graph.setunion import find
 import numpy as np
 
 def get_measurement_priority(m_id, measurement_map):

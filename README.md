@@ -113,6 +113,14 @@ pip install .[doc]
 - Utility imports should use explicit module paths (for example, `utils.optimization.*`).
 - The `utils.measurements` package now has explicit exports (no wildcard re-export), so public functions are discoverable from one place.
 
+### Quick test command
+
+Run the Phase 1 helper tests with:
+
+```powershell
+& '.\.venv\Scripts\python.exe' -m unittest discover -s '.\tests' -p 'test_*.py'
+```
+
 ## License
 
 This project is licensed under the **Mozilla Public License 2.0 (MPL-2.0)**.

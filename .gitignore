@@ -10,9 +10,6 @@ credentials.json
 # === VS Code Specific ===
 # Blocks user-specific settings, workspace states, and extensions
 .vscode/*
-!.vscode/extensions.json
-!.vscode/launch.json
-!.vscode/settings.json
 *.code-workspace
 
 # === Operating System Trash ===

@@ -11,15 +11,25 @@ requires-python = ">=3.12"
 dependencies = [
     "jupyter>=1.1.1",
     "matplotlib>=3.10.1",
-    "power-grid-model[doc]>=1.12.0",
-    "power-grid-model-ds[visualizer]>=1.8.2",
+    "numpy>=2.0,<3.0",
+    "power-grid-model>=1.12.0",
     "networkx>=3.6.1",
     "pandas>=2.2,<3.0",
+]
+
+[project.optional-dependencies]
+visualization = [
+    "power-grid-model-ds[visualizer]>=1.8.2",
+]
+rdf = [
     "rdflib>=7.1",
-    "pydantic>=2.10.5",
-    "pyarrow>=19.0.0",
     "SPARQLWrapper>=2.0.0",
     "pyoxigraph>=0.4.11",
+    "pyarrow>=19.0.0",
+    "pydantic>=2.10.5",
+]
+doc = [
+    "power-grid-model[doc]>=1.12.0",
 ]
 
 [tool.setuptools]

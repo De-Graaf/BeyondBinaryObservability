@@ -1,3 +1,6 @@
-power-grid-model
-numpy
-pandas
+jupyter>=1.1.1
+matplotlib>=3.10.1
+numpy>=2.0,<3.0
+power-grid-model>=1.12.0
+networkx>=3.6.1
+pandas>=2.2,<3.0

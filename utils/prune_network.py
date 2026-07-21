@@ -36,7 +36,7 @@ def prune_network(input_data, low_z_threshold=1e-4, high_z_threshold=1.0):
         x = lines["x1"][i]
         z_magnitude = (r**2 + x**2)**0.5
         criteria=True
-        is_low = z_magnitude < low_z_threshold #See papers with also zero-impedance lines
+        is_low = z_magnitude < low_z_threshold 
         is_high = z_magnitude > high_z_threshold
         if not is_low and not is_high:
             pruned_network_indices.append(i)

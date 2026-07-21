@@ -22,8 +22,6 @@ def augmenting_sequence(base_partition_set, r_id, adj, graph_context, measuremen
                     line_id = line_map.get(tuple(sorted((int(nodes[0]), int(nodes[1])))))
                     if line_id is not None:
                         lines_with_flows.add(int(line_id))  # Use int() to ensure standard Python integers
-    else:
-        print("Warning: measurement_map is empty or missing.")
 
     parent_set = graph_context['parent_set']
     parents = graph_context['parents']
@@ -46,7 +44,6 @@ def augmenting_sequence(base_partition_set, r_id, adj, graph_context, measuremen
     
     measurement_info = measurement_map.get(sensor_id)
     if not measurement_info:
-        print(f"Measurement ID {sensor_id} not found in measurement map. Skipping.")
         return base_partition_set
     
         
@@ -81,8 +78,6 @@ def augmenting_sequence(base_partition_set, r_id, adj, graph_context, measuremen
             line_id = int(line_id)
             if line_id not in base_partition_set:
                 candidate_edges = [line_id]
-        else:
-            print(f"Warning: Could not resolve physical line_id for flow sensor {r_id}")
 
     assigned_sensors = {int(e) for e in base_partition_set}
     queue = deque()
@@ -94,9 +89,7 @@ def augmenting_sequence(base_partition_set, r_id, adj, graph_context, measuremen
             queue.append((active_edge, [active_edge]))
             visited_edges.add(active_edge)
     else:
-        if not candidate_edges:
-            print(f"No candidate edges found for injection {r_id}. Injection is redundant.")
-            
+        if not candidate_edges:            
             return base_partition_set
             
         for edge in candidate_edges:

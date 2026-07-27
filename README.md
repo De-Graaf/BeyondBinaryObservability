@@ -64,7 +64,7 @@ Open `pipeline.ipynb` and run cells top-to-bottom.
 
 ### 3) Input data behavior
 
-The notebook now resolves input data via relative paths in this order:
+The notebook resolves input data via relative paths in this order:
 
 1. `synthetic_data/<generated-name>.json`
 2. `<generated-name>.json` in the repository root

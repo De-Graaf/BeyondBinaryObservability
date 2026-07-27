@@ -19,6 +19,7 @@ The project investigates power system observability from a graph-theoretic persp
 - `json_input/`: Example/manual input datasets.
 - `synthetic_data/`: Generated synthetic benchmark networks.
 - `results/`: Logged benchmark and experiment outputs.
+- `tests/`: Function Testing
 
 ## Main Entry Point
 

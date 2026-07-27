@@ -4,6 +4,8 @@ from collections import deque
 def augmenting_sequence(base_partition_set, r_id, adj, graph_context, measurement_context, line_df):
     """
     Implements Nucera & Gilles' augmenting sequence strategy adapted for PGM objects.
+    The function stems from the paper: 'Observability analysis: a new topological algorithm' by R. R. Nucera and M. L. Gilles
+    This function attempts to reassign sensors to lines in a way that respects the current partitioning and the constraints of the measurement types.
     Enforces strict isolation so lines with flow sensors cannot be double-assigned.
     """
     

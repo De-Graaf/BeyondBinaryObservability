@@ -6,6 +6,8 @@ This repository contains the implementation accompanying the master's thesis:
 
 The project investigates power system observability from a graph-theoretic perspective, reformulating observability analysis as a combinatorial basis-selection problem. The framework combines topological observability assessment, observable island identification, and admittance-aware basis optimization to improve numerical robustness in state estimation.
 
+**Attention:** This work and repository were built in a natural way and should be considered as research-code. This means that the software design for the presented solution is far from optimal. An object-oriented programming approach should be considered when doing subsequent implementations.  
+
 ## Repository Layout
 
 - `pipeline.ipynb`: Main end-to-end thesis pipeline.

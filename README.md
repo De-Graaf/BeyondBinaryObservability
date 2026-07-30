@@ -103,13 +103,12 @@ pip install .[doc]
 ### What is still exploratory
 
 - Sections marked as "Work In Progress" in the notebook (postprocessing/state-estimation partition export).
-- Commented experimental blocks (for example, optional plotting and Monte Carlo checks).
+- Some items are opt-in (for example, optional synthetic grid generation, plotting and Monte Carlo checks).
 
 ### Recommended first checks for a new maintainer
 
 1. Run `pipeline.ipynb` top-to-bottom once with a known dataset.
 2. Verify `results/thesis_scaling_results.csv` updates as expected.
-3. Validate whether WIP postprocessing sections should be promoted, rewritten, or isolated into a separate notebook.
 
 ### Code style and module API notes
 
